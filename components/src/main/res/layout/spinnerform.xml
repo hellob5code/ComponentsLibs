@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/tvForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <Spinner
+        android:id="@+id/spForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:focusableInTouchMode="true" >
+    </Spinner>
+   <!-- HOLO DROPDOWN -->
+    <!-- android:background="@drawable/spinner_background_holo_light" -->
+</merge>
