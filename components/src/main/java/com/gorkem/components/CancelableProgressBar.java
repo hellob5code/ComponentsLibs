@@ -15,7 +15,7 @@ public class CancelableProgressBar extends RelativeLayout implements Runnable {
     private View cancelbar;
     private View canceldialogerror;
     private Context _context;
-    private ProgressBar pb;
+    private PBCircleInfite pb;
     private TextView tv;
     private static CancelableProgressBar instance;
     private static int tvColor = android.R.color.black;
@@ -72,7 +72,7 @@ public class CancelableProgressBar extends RelativeLayout implements Runnable {
         canceldialogerror = LayoutInflater.from(_context).inflate(
                 R.layout.canceldialogerror, null);
         addViews(cancelbar);
-        pb = (ProgressBar) cancelbar.findViewById(R.id.pbProcess);
+        pb = (PBCircleInfite) cancelbar.findViewById(R.id.pbProcess);
         tv = (TextView) cancelbar.findViewById(R.id.tvPbProcess);
 
         handler = new Handler();

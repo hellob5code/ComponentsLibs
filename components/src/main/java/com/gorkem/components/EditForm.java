@@ -22,6 +22,7 @@ import com.gorkem.components.func.onEditTextChangeListener;
 
 public class EditForm extends LinearLayout {
 
+    private Integer keepInt = null;
     public static String TAG = "EditForm";
     protected EditText etForm;
     protected TextView tvForm;
@@ -68,7 +69,7 @@ public class EditForm extends LinearLayout {
         String labelText = a.getString(R.styleable.EditForm_labelText);
         String editText = a.getString(R.styleable.EditForm_editText);
 
-        String editHint = a.getString(R.styleable.EditForm_editHint);
+        final String editHint = a.getString(R.styleable.EditForm_editHint);
 
         boolean editEnable = a
                 .getBoolean(R.styleable.EditForm_editEnable, true);
@@ -146,18 +147,22 @@ public class EditForm extends LinearLayout {
             public void afterTextChanged(Editable s) {
 
                 // Notify the listener
-                if (mTextListener != null) {
+                if (mTextListener != null && s.toString() != null) {
+
                     if (s.length() == 0)
                         mTextListener.onChanged("");
                     else
                         mTextListener.onChanged(s.toString());
+
                 }
             }
+
         });
     }
 
     public void setonEditTextChangeListener(
             onEditTextChangeListener mTextListener) {
+
         this.mTextListener = mTextListener;
     }
 
@@ -178,7 +183,10 @@ public class EditForm extends LinearLayout {
     }
 
     public void setEditTextString(String a) {
-        this.etForm.setText(a);
+        if (a == null)
+            this.etForm.setText("");
+        else
+            this.etForm.setText(a);
     }
 
     public void setTextViewString(String a) {
@@ -206,4 +214,11 @@ public class EditForm extends LinearLayout {
 
     }
 
+    public Integer getKeepInt() {
+        return keepInt;
+    }
+
+    public void setKeepInt(Integer keepInt) {
+        this.keepInt = keepInt;
+    }
 }
