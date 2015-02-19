@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="MaterialTextView">
+        <attr name="maskColor" format="color" />
+    </declare-styleable>
+
     <declare-styleable name="CircleButton">
         <attr name="cb_color" format="color" />
         <attr name="cb_pressed_ring_width" format="dimension" />
