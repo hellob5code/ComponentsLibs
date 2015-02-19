@@ -16,6 +16,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name=".SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name=".UploadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name=".StateSampleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
     </application>
 
 </manifest>

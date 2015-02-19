@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/ComponentsLibs.iml" filepath="$PROJECT_DIR$/ComponentsLibs.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/components/components.iml" filepath="$PROJECT_DIR$/components/components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processbutton/processbutton.iml" filepath="$PROJECT_DIR$/processbutton/processbutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shimmer/shimmer.iml" filepath="$PROJECT_DIR$/shimmer/shimmer.iml" />
     </modules>
   </component>
 </project>
